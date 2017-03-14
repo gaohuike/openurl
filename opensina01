@@ -1,5 +1,7 @@
-#open 'http://www.sina.com.cn/'
+#open_input_url 
 import urllib2
-response = urllib2.urlopen('http://www.sina.com.cn/')
+url = raw_input('please enter your url: ')
+#print url
+response = urllib2.urlopen(url)
 html = response.read()
 print html
